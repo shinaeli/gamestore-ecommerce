@@ -1,0 +1,190 @@
+@keyframes slideInTable {
+    from {
+      transform: scaleX(0);
+    }
+
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+table {
+    width: 80%;
+    margin: 10px auto 30px;
+    border-collapse: collapse;
+    background-color: blueviolet;
+    animation: slideInTable 2s ease-in-out;
+}
+
+caption {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: grey;
+}
+
+table, th, td {
+    border: 2px solid #fe00ad;
+    text-align: center;
+    padding: 10px;
+}
+
+.total td {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.left-texted {
+    text-align: left;
+}
+
+td {
+    color: #fff;
+}
+
+@keyframes scaleOrderSummary {
+    from {
+      transform: scaleY(0);
+    }
+
+    to {
+      transform: scaleY(1);
+    }
+  }
+
+.order-summary {
+    width: 40%;
+    margin: 30px auto;
+    text-align: center;
+    animation: scaleOrderSummary 2s ease-in-out;
+}
+
+.order-summary h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    color: grey;
+}
+
+.order-summary p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.order-summary span {
+    color: blueviolet;
+}
+
+.order-confirmation {
+    width: 65%;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #fe00ad;
+    border-radius: 8px;
+}
+
+.order-confirmation h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: grey;
+    font-size: 1.8rem;
+}
+
+.order-confirmation h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+label, input {
+    display: block;
+}
+
+input {
+    width: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.flex-terms {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.place-order-btn {
+    display: block;
+    width: 30%;
+    margin: 20px auto;
+    padding: 15px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: blueviolet;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: background-color 3s ease-in, color 2s ease-in;
+}
+
+.place-order-btn:hover {
+    background-color: #fe00ad;
+    color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    table {
+        width: 90%;
+    }
+
+    caption {
+        font-size: 1.5rem;
+    }
+
+    table, th, td {
+        font-size: 0.85rem;
+    }
+
+    .total td {
+        font-size: 1rem;
+    }
+
+    .order-summary {
+        width: 70%;
+    }
+    
+    .order-summary h2 {
+        font-size: 1.5rem;
+    }
+    
+    .order-summary p {
+        font-size: 1rem;
+    }
+
+    .order-confirmation {
+        width: 95%;
+    }
+    
+    .order-confirmation h2 {
+        font-size: 1.5rem;
+    }
+    
+    .order-confirmation h3 {
+        font-size: 1.2rem;
+    }
+    
+    input {
+        margin-top: 3px;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+    
+    .place-order-btn {
+        width: 50%;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}

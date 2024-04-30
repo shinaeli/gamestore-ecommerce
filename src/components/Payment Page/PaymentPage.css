@@ -1,0 +1,118 @@
+/* Payment Styling */
+.form-header {
+    text-align: center;
+    font-size: 3rem;
+    color: #fe00ad;
+    animation: slideIn 2s ease-in-out;
+  }
+  
+  .payment {
+    width: 45%;
+    margin: 10px auto;
+    padding: 20px;
+    /* border: 2px solid yellow; */
+  }
+  
+  .full-name, .phone, .email, .amount, .address, .card-number, .cvv-expiry {
+    margin: 20px 0px;
+  }
+
+  .cvv-expiry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cvv {
+    width: 20%;
+  }
+
+  .expiry {
+    width: 35%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: grey;
+  }
+
+  @keyframes slideInInputs {
+    from {
+      transform: scaleX(0);
+    }
+
+    to {
+      transform: scaleX(1);
+    }
+  }
+  
+  .payment input, textarea {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid blueviolet;
+    color: #fe00ad;
+    animation: slideIn 2s ease-in-out;
+  }
+
+  textarea {
+    height: 120px;
+  }
+  
+  .paystack-button {
+    display: block;
+    width: 30%;
+    margin: 20px auto 50px;
+    padding: 15px;
+    font-size: 1.5rem;
+    border: none;
+    background-color: blueviolet;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 3s ease-in, color 2s ease-in;
+    animation: slideIn 2s ease-in-out;
+  }
+
+  .paystack-button:hover {
+    background-color: #fe00ad;
+    color: #fff;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .form-header {
+      font-size: 2rem;
+    }
+
+    .payment {
+      width: 95%;
+    }
+
+    label {
+      font-size: 1rem;
+    }
+
+    .payment input, textarea {
+      font-size: 1rem;
+      padding: 5px;
+      border-radius: 3px;
+      padding: 12px 10px;
+    }
+
+    .expiry {
+      width: 30%;
+    }
+
+    textarea {
+      height: 100px;
+    }
+
+    .paystack-button {
+      width: 60%;
+      font-size: 1.2rem;
+    }
+  }

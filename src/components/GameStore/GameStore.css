@@ -1,0 +1,69 @@
+/* Game Store Stylings */
+.store {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  @keyframes show {
+    from {
+      transform: scaleY(0);
+    }
+
+    to {
+      transform: scaleY(1);
+    }
+  }
+
+  .product {
+    width: 30%;
+    /* border: 2px solid grey; */
+    border-radius: 8px;
+    margin: 30px auto;
+    padding: 10px;
+    height: 600px;
+    animation: show 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .item-img {
+    height: 450px;
+  }
+
+  .item-img:hover {
+    opacity: 0.6;
+  }
+  
+  .item-name {
+    margin: 15px 0px;
+    font-size: 1.2rem;
+    text-align: left;
+    line-height: 1.2;
+    color: grey;
+  }
+  
+  .item-rating {
+    margin: 5px 0px;
+    font-size: 1rem;
+    text-align: left;
+    color: blueviolet;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .store {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .product {
+      width: 90%;
+    }
+  }

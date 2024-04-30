@@ -1,0 +1,227 @@
+/* Item Details Styling */
+.flexed, .counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  @keyframes slideGamePhoto {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  .game-photo {
+    height: 700px;
+    width: 45%;
+    border-radius: 8px;
+    animation: slideGamePhoto 2s ease-in-out;
+  }
+
+  @keyframes slideGameDetails {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  .game-details {
+    width: 45%;
+    animation: slideGameDetails 2s ease-in-out;
+  }
+  
+  .game-title {
+    margin-bottom: 35px;
+    font-size: 3rem;
+    color: grey;
+  }
+  
+  .game-price {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: grey;
+  }
+  
+  .counter {
+    width: 20%;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+    /* border: 1px solid #a8e1f8; */
+  }
+  
+  .increment, .decrement {
+    display: block;
+    width: 15%;
+    text-align: center;
+  }
+  
+  .game-rating {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #fe00ad;
+  }
+  
+  .rating-stars {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .game-vendor, .item-cost {
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+  }
+
+  .game-vendor {
+    color: blueviolet;
+  }
+  
+  .discount {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: grey;
+  }
+
+  @keyframes slideMoreDetails {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+  
+  .more-details, .reviews {
+    width: 70%;
+    margin: 40px auto;
+    padding: 15px;
+    border: 1px solid #fe00ad;
+    border-radius: 8px;
+  }
+
+  .more-details {
+    animation: slideMoreDetails 2.5s ease-in-out;
+  }
+
+  @keyframes slideReviews {
+    from {
+      transform: translateX(100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+  .reviews {
+    margin-bottom: 50px;
+    animation: slideReviews 3s ease-in-out;
+  }
+  
+  .more-details h2, .reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: blueviolet;
+  }
+  
+  .more-details p {
+    font-size: 1.35rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: grey;
+  }
+  
+  .review {
+    margin: 20px 0px;
+  }
+  
+  .review h3 {
+    margin-bottom: 10px;
+    color: #fe00ad;
+  }
+  
+  .review p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .game-photo {
+      height: 300px;
+      width: 45%;
+    }
+
+    .game-details {
+      width: 50%;
+    }
+
+    .game-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .game-price {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .counter {
+      width: 40%;
+      margin-bottom: 10px;
+    }
+
+    .increment, .decrement {
+      width: 20%;
+    }
+
+    .game-rating {
+      font-size: 1.2rem;
+    }
+
+    .game-vendor, .item-cost {
+      font-size: 1rem;
+    }
+
+    .discount {
+      font-size: 1rem;
+    }
+
+    .more-details, .reviews {
+      width: 95%;
+      padding: 10px;
+    }
+
+    .more-details h2, .reviews h2 {
+      font-size: 1.5rem;
+    }
+    
+    .more-details p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    
+    .review {
+      margin: 20px 0px;
+    }
+    
+    .review p {
+      font-size: 0.8rem;
+      line-height: 1.5;
+    }
+  }

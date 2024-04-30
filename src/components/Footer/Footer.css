@@ -1,0 +1,23 @@
+.footer {
+  color: grey;
+  margin: 20px 0px;
+}
+
+.footer a {
+    color: blueviolet;
+    text-decoration: none;
+  }
+  
+  .copyright {
+    width: 65%;
+    margin: 10px auto;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    .copyright {
+      width: 95%;
+      font-size: 1.2rem;
+    }
+  }

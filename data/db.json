@@ -1,0 +1,24 @@
+{
+  "customersDetails": [
+    {
+      "id": "368",
+      "fullName": "Oluwasina Omotosho",
+      "phone": "08141215891",
+      "email": "omotoshoelisha@gmail.com",
+      "address": "7, Foluke Dare Street, Niyi Ibikunle Area, Osun State.",
+      "cardNumber": "1245-8904-3334-0445",
+      "expiry": "10/14",
+      "cvv": "504"
+    },
+    {
+      "id": "691",
+      "fullName": "George Philemon",
+      "phone": "08146675890",
+      "email": "george_bigphil@yahoo.com",
+      "address": "176th Street, Baton Rouge Avenue, New Orleans, Louisiana.",
+      "cardNumber": "0012-8864-1583-9926",
+      "cvv": "119",
+      "expiry": "11/13"
+    }
+  ]
+}
